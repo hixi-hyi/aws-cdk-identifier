@@ -1,0 +1,51 @@
+{
+  "name": "aws-cdk-identifier",
+  "version": "1.0.0",
+  "description": "The library is useful for structuring aws-cdk",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run lint && jest",
+    "lint": "tslint 'lib/**/*.ts' 'test/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hixi-hyi/aws-cdk-identifier.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hixi-hyi/aws-cdk-identifier/issues"
+  },
+  "homepage": "https://github.com/hixi-hyi/aws-cdk-identifier#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.31",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "tsc": "^1.20150623.0",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/test/**/*.ts"
+    ]
+  }
+}
