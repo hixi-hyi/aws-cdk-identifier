@@ -2,7 +2,8 @@
   "name": "aws-cdk-identifier",
   "version": "1.0.0",
   "description": "The library is useful for structuring aws-cdk",
-  "main": "lib/index.js",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "npm run lint && jest",
