@@ -4,11 +4,25 @@ import cdk = require('@aws-cdk/core');
 import { Identifier, Rank, RankLoc } from 'aws-cdk-identifier';
 import { ManagementAlarmCommonStack, ManagementAlarmBudgetStack } from 'lib/stack';
 
+function environment(): string {
+  const sections = new Map<string, string>([
+    ['${YOUR_DEV_AWS_ACCOUNT_ID}', 'dev'],
+    ['${YOUR_PROD_AWS_ACCOUNT_ID}', 'prod'],
+  ]);
+  const account = process.env.CDK_DEFAULT_ACCOUNT || '';
+  const section = sections.get(account);
+  if (section !== undefined) {
+    return section
+  }
+  throw new Error('Error: account not found')
+}
+
 const app = new cdk.App();
 const id = new Identifier({
   empire: 'hixi',
   division: 'sample',
   section: 'dev',
+  //section: environment(),
 });
 
 Rank.DEFAULT_START_LOC = RankLoc.Legion
