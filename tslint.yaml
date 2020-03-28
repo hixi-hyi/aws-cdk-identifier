@@ -59,5 +59,3 @@ rules:
     no-duplicate-imports: error
 
     no-console: false
-
-

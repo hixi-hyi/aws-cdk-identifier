@@ -50,9 +50,19 @@ export class Rank implements IRank {
 
   constructor(r: IRank) {
     this.expands(r);
+    this.validate();
   }
 
-  private expands(r: IRank) {
+  private validate(): void {
+    const values = this.toArray();
+    values.forEach(v => {
+      if (v !== v.toLowerCase()) {
+        throw new Error(`Error: The capitalize string is not allowed. Because the value of IRank is used as a delimiter of StackName`);
+      }
+    });
+  }
+
+  private expands(r: IRank): void {
     this.empire = r.empire || this.empire;
     this.kingdom = r.kingdom || this.kingdom;
     this.division = r.division || this.division;
@@ -66,11 +76,12 @@ export class Rank implements IRank {
     this.species = r.species || this.species;
   }
 
-  public copy(r?: IRank) {
+  public copy(r?: IRank): Rank {
     const ret = _.cloneDeep(this);
     if (r) {
       ret.expands(r);
     }
+    this.validate();
     return ret;
   }
 
@@ -101,17 +112,17 @@ export class Rank implements IRank {
     return this.toArray()[loc];
   }
 
-  public capitalizeString(start?: RankLoc, end?: RankLoc): string {
+  public toCamelString(start?: RankLoc, end?: RankLoc): string {
     const array = this.toArrayWithLoc(start, end);
     return array.reduce((acc, word) => acc + word.charAt(0).toUpperCase() + word.slice(1), '');
   }
 
-  public slashString(start?: RankLoc, end?: RankLoc): string {
+  public toSlashString(start?: RankLoc, end?: RankLoc): string {
     const array = this.toArrayWithLoc(start, end);
     return array.join('/');
   }
 
-  public dotString(start?: RankLoc, end?: RankLoc): string {
+  public toDotString(start?: RankLoc, end?: RankLoc): string {
     const array = this.toArrayWithLoc(start, end);
     return array.join('.');
   }

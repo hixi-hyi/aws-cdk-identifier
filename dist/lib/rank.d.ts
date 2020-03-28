@@ -42,12 +42,13 @@ export declare class Rank implements IRank {
     series: string;
     species: string;
     constructor(r: IRank);
+    private validate;
     private expands;
-    copy(r?: IRank): this;
+    copy(r?: IRank): Rank;
     private toArray;
     private toArrayWithLoc;
     getValue(loc: RankLoc): string;
-    capitalizeString(start?: RankLoc, end?: RankLoc): string;
-    slashString(start?: RankLoc, end?: RankLoc): string;
-    dotString(start?: RankLoc, end?: RankLoc): string;
+    toCamelString(start?: RankLoc, end?: RankLoc): string;
+    toSlashString(start?: RankLoc, end?: RankLoc): string;
+    toDotString(start?: RankLoc, end?: RankLoc): string;
 }
