@@ -29,5 +29,10 @@ export class Chatbot extends cdk.Construct {
     this.notifyTopic.addToResourcePolicy(policy);
 
     //TODO connection snsTopic to AWS Chatbot
+    
+    new cdk.CfnOutput(this, "OutputNotifyTopic", {
+      exportName: id.exportName("TopicArn"),
+      value: this.notifyTopic.topicArn,
+    })
   }
 }
