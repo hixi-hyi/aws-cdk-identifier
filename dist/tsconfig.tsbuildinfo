@@ -162,12 +162,12 @@
         "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d"
       },
       "../lib/rank.ts": {
-        "version": "8f3061992aaf3e1892e89a7998cd16b3deddc7f750622671d739e3383025601c",
-        "signature": "9cf7466192b55f79df385d4502a6cdeb3921e235ebea9a154560ac0809719810"
+        "version": "306fd5a8c01afab30b62f96bd2dff73d35bda695342f05ae32af0bdd6619954d",
+        "signature": "660735020b48b1a1583dcea60db1e6d6b18fac2e53762b8ed4f2c98f81f62218"
       },
       "../lib/identifier.ts": {
-        "version": "969c96e66ca13dfa0488833746624bddfecc2145219420fb4e554ee111bb6a93",
-        "signature": "c7415e1a1c1c9af12c2999ee33df0a2a4212eb1df0ac6cf9312bbb9273ab5622"
+        "version": "359d5ec3a60f5845e66afe5c33261b77c4f963ecb49ca4242a3f1fda1dc2e5f1",
+        "signature": "6c6875ec7a296daf4bc29c3e40ba0c7143d89edb09605deb95a21f51dc4e01d0"
       },
       "../lib/variables.ts": {
         "version": "99cd9d27fa33daac4da05acb74c43a3d2c5f86b10071c09e728acc2eb0e7293d",
@@ -2360,7 +2360,6 @@
       "../node_modules/@types/lodash/ts3.1/common/string.d.ts",
       "../node_modules/@types/lodash/ts3.1/common/util.d.ts",
       "../node_modules/@types/lodash/ts3.1/index.d.ts",
-      "../lib/rank.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
       "../node_modules/@types/babel__traverse/index.d.ts",
@@ -2427,9 +2426,10 @@
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
+      "../lib/rank.ts",
+      "../lib/variables.ts",
       "../lib/identifier.ts",
-      "../lib/index.ts",
-      "../lib/variables.ts"
+      "../lib/index.ts"
     ]
   },
   "version": "3.8.3"

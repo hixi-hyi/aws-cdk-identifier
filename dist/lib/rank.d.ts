@@ -51,4 +51,5 @@ export declare class Rank implements IRank {
     toCamelString(start?: RankLoc, end?: RankLoc): string;
     toSlashString(start?: RankLoc, end?: RankLoc): string;
     toDotString(start?: RankLoc, end?: RankLoc): string;
+    toDashString(start?: RankLoc, end?: RankLoc): string;
 }

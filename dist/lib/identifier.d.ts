@@ -12,4 +12,5 @@ export declare class Identifier {
     get camelName(): string;
     get slashName(): string;
     get dotName(): string;
+    get dashName(): string;
 }
