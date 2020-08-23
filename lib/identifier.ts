@@ -67,16 +67,16 @@ export class Identifier {
 
   public get slashName(): string {
     const array = [ this.rank.toSlashString(), ...this.childs];
-    return array.join('/');
+    return array.join('/').toLowerCase();
   }
 
   public get dotName(): string {
     const array = [ this.rank.toDotString(), ...this.childs];
-    return array.join('.');
+    return array.join('.').toLowerCase();
   }
 
   public get dashName(): string {
     const array = [ this.rank.toDashString(), ...this.childs];
-    return array.join('-');
+    return array.join('-').toLowerCase();
   }
 }

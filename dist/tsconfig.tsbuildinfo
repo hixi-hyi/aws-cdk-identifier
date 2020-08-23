@@ -166,7 +166,7 @@
         "signature": "660735020b48b1a1583dcea60db1e6d6b18fac2e53762b8ed4f2c98f81f62218"
       },
       "../lib/identifier.ts": {
-        "version": "359d5ec3a60f5845e66afe5c33261b77c4f963ecb49ca4242a3f1fda1dc2e5f1",
+        "version": "4931039a8916bd73e202096ffce863b02de33f92fab19817c166681d6f3e11f6",
         "signature": "6c6875ec7a296daf4bc29c3e40ba0c7143d89edb09605deb95a21f51dc4e01d0"
       },
       "../lib/variables.ts": {
@@ -2360,6 +2360,9 @@
       "../node_modules/@types/lodash/ts3.1/common/string.d.ts",
       "../node_modules/@types/lodash/ts3.1/common/util.d.ts",
       "../node_modules/@types/lodash/ts3.1/index.d.ts",
+      "../lib/rank.ts",
+      "../lib/variables.ts",
+      "../lib/index.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
       "../node_modules/@types/babel__traverse/index.d.ts",
@@ -2426,10 +2429,7 @@
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../lib/rank.ts",
-      "../lib/variables.ts",
-      "../lib/identifier.ts",
-      "../lib/index.ts"
+      "../lib/identifier.ts"
     ]
   },
   "version": "3.8.3"

@@ -32,6 +32,9 @@ describe('Identifier', () => {
           expect(id.stackName).toBe('Usage1Usage2Webapp');
           expect(id.constructName).toBe("Construct2");
           expect(id.exportName('Name')).toBe('Usage1Usage2Webapp:ConstructConstruct2:Name');
+          expect(id.slashName).toBe('usage1/usage2/webapp/construct/construct2');
+          expect(id.dotName).toBe('usage1.usage2.webapp.construct.construct2');
+          expect(id.dashName).toBe('usage1-usage2-webapp-construct-construct2');
         });
       });
     });
