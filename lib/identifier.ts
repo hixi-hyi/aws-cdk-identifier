@@ -75,4 +75,8 @@ export class Identifier {
     return array.join('.');
   }
 
+  public get dashName(): string {
+    const array = [ this.rank.toDashString(), ...this.childs];
+    return array.join('-');
+  }
 }
