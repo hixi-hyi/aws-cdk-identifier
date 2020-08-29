@@ -5,6 +5,7 @@ export declare class Identifier {
     constructor(r: IRank);
     child(value: string | IRank): Identifier;
     copy(): Identifier;
+    get parent(): Identifier;
     scope(callback: (id: Identifier) => void): void;
     get stackName(): string;
     get constructName(): string;
