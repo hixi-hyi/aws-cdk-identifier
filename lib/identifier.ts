@@ -35,6 +35,12 @@ export class Identifier {
     return id;
   }
 
+  public get parent(): Identifier {
+    const id = this.copy();
+    id.childs.pop();
+    return id;
+  }
+
   public scope(callback: (id: Identifier) => void) {
     callback(this.copy());
   }
