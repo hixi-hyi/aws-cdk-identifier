@@ -166,8 +166,8 @@
         "signature": "660735020b48b1a1583dcea60db1e6d6b18fac2e53762b8ed4f2c98f81f62218"
       },
       "../lib/identifier.ts": {
-        "version": "27032fd72b4cab1211d0127394fbe2b5785a3aacecdbeeabe4fac534ac29e3ea",
-        "signature": "84279640ac8e5fc609efda739534e7387c5f8527784eff27b2c84e6ad3c95c3b"
+        "version": "0ba7e31620604cb7e2e663b039361d4563522b94a3e61e8fb2c5e242b8cf2248",
+        "signature": "f38f49ee261a327120db4c5ff519dfea1914e35064cfd9984957cfda1a17cf8b"
       },
       "../lib/variables.ts": {
         "version": "99cd9d27fa33daac4da05acb74c43a3d2c5f86b10071c09e728acc2eb0e7293d",

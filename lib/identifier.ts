@@ -35,6 +35,10 @@ export class Identifier {
     return id;
   }
 
+  public get getChilds(): string[] {
+    return Array.from(this.childs);
+  }
+
   public get parent(): Identifier {
     const id = this.copy();
     id.childs.pop();
