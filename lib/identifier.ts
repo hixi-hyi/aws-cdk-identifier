@@ -89,4 +89,9 @@ export class Identifier {
     const array = [ this.rank.toDashString(), ...this.childs];
     return array.join('-').toLowerCase();
   }
+
+  public get snakeName(): string {
+    const array = [ this.rank.toDashString(), ...this.childs];
+    return array.join('_').toLowerCase();
+  }
 }

@@ -132,4 +132,9 @@ export class Rank implements IRank {
     return array.join('-');
   }
 
+  public toSnakeString(start?: RankLoc, end?: RankLoc): string {
+    const array = this.toArrayWithLoc(start, end);
+    return array.join('_');
+  }
+
 }
